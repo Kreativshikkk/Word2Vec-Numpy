@@ -42,6 +42,7 @@ ckpt_name:
 ```
 
 ## Commands
+- **setup**: `pip install -r requirements.txt` - installs dependencies
 - **train**: `python train.py` - trains the model and saves the checkpoint in `ckpt_directory`
 - **eval**: `python eval.py` - evaluates the model and saves the accuracy plot
 
