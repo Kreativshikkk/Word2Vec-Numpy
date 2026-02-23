@@ -42,9 +42,10 @@ ckpt_name:
 ```
 
 ## Commands
-- **setup**: `pip install -r requirements.txt` - installs dependencies
-- **train**: `python train.py` - trains the model and saves the checkpoint in `ckpt_directory`
-- **eval**: `python eval.py` - evaluates the model and saves the accuracy plot
+1. **setup**: `pip install -r requirements.txt` - installs dependencies
+2. **download data**: `python dataset.py` - downloads the data from Kaggle and processes it, saves the processed data in `data_directory`
+3. **train**: `python train.py` - trains the model and saves the checkpoint in `ckpt_directory`
+4. **eval**: `python eval.py` - evaluates the model and saves the accuracy plot
 
 ## Evaluation metric and process
 
