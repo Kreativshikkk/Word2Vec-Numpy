@@ -15,7 +15,16 @@ Classic Word2Vec (SkipGram with negative sampling) train loop implementation usi
 - `requirements.txt` - list of dependencies for the project
 
 ## Python version
+
 Python 3.9 is preferred
+
+## Commands to run the project:
+
+1. **setup**: `pip install -r requirements.txt` - installs dependencies
+2. **download data**: `python dataset.py` - downloads the data from Kaggle and processes it, saves the processed data in
+   `data_directory`
+3. **train**: `python train.py` - trains the model and saves the checkpoint in `ckpt_directory`
+4. **eval**: `python eval.py` - evaluates the model and saves the accuracy plot
 
 ## Config content
 
@@ -41,17 +50,13 @@ load_from_ckpt:
 ckpt_name:
 ```
 
-## Commands
-1. **setup**: `pip install -r requirements.txt` - installs dependencies
-2. **download data**: `python dataset.py` - downloads the data from Kaggle and processes it, saves the processed data in `data_directory`
-3. **train**: `python train.py` - trains the model and saves the checkpoint in `ckpt_directory`
-4. **eval**: `python eval.py` - evaluates the model and saves the accuracy plot
-
 ## Evaluation metric and process
 
 Model predicts top 8 similar words for a given word. Then the intersection of predicted words and actual words is
 divided by the total number of context words in batch `batch_size * window_size * 2` to get the accuracy metric
 
 ## Model weights
-You can access the embeddings, trained on 1 epoch [here](https://drive.google.com/file/d/1AWv8mgTnybI8Zj1_8F03zfPyuNzzoPX6/view?usp=sharing)
+
+You can access the embeddings, trained on 1
+epoch [here](https://drive.google.com/file/d/1AWv8mgTnybI8Zj1_8F03zfPyuNzzoPX6/view?usp=sharing)
 
