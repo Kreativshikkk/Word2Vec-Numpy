@@ -4,12 +4,12 @@ from pathlib import Path
 
 import numpy as np
 
-from hallucination_detection.dataset import BatchLoader, CustomDataset
-from hallucination_detection.main import CONFIG
-from hallucination_detection.model import SkipGramModel
+from dataset import BatchLoader, CustomDataset
+from main import CONFIG
+from model import SkipGramModel
 from tqdm.auto import tqdm
 
-from hallucination_detection.utils import load_model_from_ckpt
+from utils import load_model_from_ckpt
 
 NUM_EPOCHS = CONFIG.get("num_epochs", 2)
 CKPT_DIRECTORY = Path(CONFIG.get("ckpt_directory", Path("data/checkpoints")))

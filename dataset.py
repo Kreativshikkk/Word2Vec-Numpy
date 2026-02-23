@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 from tqdm.auto import tqdm
 
-from hallucination_detection.main import CONFIG
+from main import CONFIG
 
 DATA_DIRECTORY = Path(CONFIG.get("data_directory", Path("data")))
 KAGGLE_PATH = CONFIG.get("kaggle_path", "kritanjalijain/amazon-reviews")

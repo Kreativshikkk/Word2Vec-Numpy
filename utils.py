@@ -4,8 +4,8 @@ from pathlib import Path
 
 import numpy as np
 
-from hallucination_detection.main import CONFIG
-from hallucination_detection.model import SkipGramModel
+from main import CONFIG
+from model import SkipGramModel
 
 CKPT_DIRECTORY = Path(CONFIG.get("ckpt_directory", Path("data/checkpoints")))
 

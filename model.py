@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import numpy as np
 
-from hallucination_detection.dataset import load_dict_pickle
-from hallucination_detection.main import CONFIG
+from dataset import load_dict_pickle
+from main import CONFIG
 
 VOCAB_SIZE = len(load_dict_pickle("data/word2id.pkl"))
 EMBEDDING_DIM = CONFIG.get("embedding_dim", 256)

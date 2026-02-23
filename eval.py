@@ -5,12 +5,12 @@ from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
-from hallucination_detection.dataset import BatchLoader, CustomDataset, load_dict_pickle
-from hallucination_detection.main import CONFIG
-from hallucination_detection.model import SkipGramModel
+from dataset import BatchLoader, CustomDataset, load_dict_pickle
+from main import CONFIG
+from model import SkipGramModel
 from tqdm.auto import tqdm
 
-from hallucination_detection.utils import load_model_from_ckpt
+from utils import load_model_from_ckpt
 
 CKPT_DIRECTORY = Path(CONFIG.get("ckpt_directory", Path("data/checkpoints")))
 LOAD_FROM_CKPT = CONFIG.get("load_from_ckpt", False)
