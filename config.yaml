@@ -1,0 +1,17 @@
+# training
+num_epochs: 2
+window_size: 4
+num_negatives: 15
+batch_size: 32
+kaggle_path: "kritanjalijain/amazon-reviews"
+embedding_dim: 256
+beta_1: 0.9
+beta_2: 0.999
+learning_rate: 0.001
+eps: 1e-12
+
+# paths
+ckpt_directory: data/checkpoints
+data_directory: "data"
+load_from_ckpt: true
+ckpt_name: "epoch_1_step_1000000.npz"
