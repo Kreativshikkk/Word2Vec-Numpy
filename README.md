@@ -1,4 +1,4 @@
-# Wod2Vec-Numpy
+# Word2Vec-Numpy
 
 Classic Word2Vec (SkipGram with negative sampling) train loop implementation using Numpy from scratch.
 
